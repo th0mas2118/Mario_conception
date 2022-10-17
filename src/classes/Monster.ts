@@ -1,13 +1,7 @@
-import { Character } from "../interfaces/Character";
+import {ACharacter} from "./ACharacter";
 
-export abstract class Monster implements Character{
-    name:string;
+export abstract class Monster extends ACharacter{
     constructor(name:string){
-        this.name=name;
-    }
-    getName():string{
-        return this.name;
-    }
-    render(){
+        super(name)
     }
 }

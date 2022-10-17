@@ -1,16 +1,18 @@
-import { Character } from "../interfaces/Character";
+import {Position} from "./Utils/Position";
+import { ACharacter } from "./ACharacter";
 
-export class Mario implements Character{
-    name:string;
+export class Mario extends ACharacter{
     life:number;
+    nb_piece:number;
     constructor(){
-        this.name="its_me_mario";
+        super("$");
         this.life=3;
+        this.nb_piece=0;
     }
-    render(){
-        console.log("$");
-    }
-    jump(){
+    jump():void{
         console.log("jump");
+    }
+    addPiece():void{
+        this.nb_piece++;
     }
 }

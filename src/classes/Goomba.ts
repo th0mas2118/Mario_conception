@@ -1,7 +1,9 @@
 import { Monster } from "./Monster";
 
 class Goomba extends Monster{
-    render(): void {
-        console.log("%");
+    live:boolean;
+    constructor(){
+        super("%");
+        this.live=true;
     }
 }

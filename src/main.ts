@@ -1,3 +1,4 @@
+import {Mario} from "./classes/Mario";
 function main(): string {
     const hello: string = "Hello, World!";
     return hello;

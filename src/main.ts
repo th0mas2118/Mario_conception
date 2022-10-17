@@ -1,4 +1,4 @@
-import {Mario} from "./classes/Mario";
+import {Mario} from "./classes/Character/Mario";
 function main(): string {
     const hello: string = "Hello, World!";
     return hello;
@@ -6,5 +6,6 @@ function main(): string {
 
 const result: any = main();
 //console.log(result);
+
 
 export default main;

@@ -1,3 +1,4 @@
+import { Goomba } from "./classes/Character/Goomba";
 import { Mario } from "./classes/Character/Mario";
 import { World } from "./classes/Global/World";
 import { Position } from "./classes/Utils/Position";
@@ -12,6 +13,10 @@ const result: any = main();
 //console.log(result);
 
 let world = new World();
+let mario = new Mario(new Position(3, 6));
+
+world.characters.push(mario);
+world.characters.push(new Goomba(new Position(6, 6)));
 
 world.render();
 

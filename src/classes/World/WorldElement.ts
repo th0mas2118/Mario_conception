@@ -1,16 +1,16 @@
+import { Position } from "../Utils/Position";
+
 export abstract class WorldElement {
     name: string;
+    position: Position;
+
     protected char: string;
-    protected interactable: boolean;
-    protected breakable: boolean;
+
+    constructor(pos: Position) {
+        this.position = pos;
+    }
 
     render(): string {
         return this.char;
-    }
-
-    interact(): void {
-        if (!this.interactable) return;
-
-        console.log("Interaction avec " + this.name);
     }
 }

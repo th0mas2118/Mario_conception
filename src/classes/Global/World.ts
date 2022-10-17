@@ -1,4 +1,4 @@
-import { ACharacter } from "../ACharacter";
+import { ACharacter } from "../Character/ACharacter";
 import { Grid } from "../Utils/Grid";
 import { WorldElement } from "../WorldElements/WorldElement";
 

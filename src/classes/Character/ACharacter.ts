@@ -18,4 +18,7 @@ export abstract class ACharacter implements IRenderable, IMovable{
     getName(){
         return this._name;
     }
+    get position():Position{
+        return this._position;
+    }
 }

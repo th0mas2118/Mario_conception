@@ -1,9 +1,11 @@
+import { Position } from "../Utils/Position";
 import { Monster } from "./Monster";
 
 class Goomba extends Monster{
-    live:boolean;
-    constructor(){
-        super("%");
-        this.live=true;
+    _live:boolean;
+    constructor(_Pos:Position){
+        super(_Pos)
+        this._name="%";
+        this._live=true;
     }
 }

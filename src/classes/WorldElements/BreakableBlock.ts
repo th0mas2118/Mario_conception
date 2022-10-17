@@ -6,7 +6,7 @@ export class BreakableBlock extends WorldElement implements IInteractable {
         super(pos);
 
         this.name = "Block";
-        this.char = "□";
+        this._char = "□";
     }
 
     interact(): void {

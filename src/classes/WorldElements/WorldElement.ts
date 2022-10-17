@@ -1,16 +1,17 @@
+import { IRenderable } from "../../interfaces/IRenderable";
 import { Position } from "../Utils/Position";
 
-export abstract class WorldElement {
+export abstract class WorldElement implements IRenderable {
     name: string;
     position: Position;
 
-    protected char: string;
+    protected _char: string;
 
     constructor(pos: Position) {
         this.position = pos;
     }
 
     render(): string {
-        return this.char;
+        return this._char;
     }
 }

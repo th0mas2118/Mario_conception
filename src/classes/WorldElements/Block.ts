@@ -5,6 +5,6 @@ export class Block extends WorldElement {
         super(pos);
 
         this.name = "Block";
-        this.char = "□";
+        this._char = "□";
     }
 }

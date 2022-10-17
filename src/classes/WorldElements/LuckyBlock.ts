@@ -6,7 +6,7 @@ export class LuckyBlock extends WorldElement implements IInteractable {
         super(pos);
 
         this.name = "Lucky Block";
-        this._char = "?";
+        this._char = "❔";
     }
 
     interact(): void {

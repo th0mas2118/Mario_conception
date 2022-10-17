@@ -3,21 +3,22 @@ import { IMovable } from "../../interfaces/IMovable";
 import { Position } from "../Utils/Position";
 
 export abstract class ACharacter implements IRenderable, IMovable{
-    name:string;
-    position:Position;
-    constructor(name:string){
-        this.name=name;
-        this.position.X=0;
-        this.position.Y=0;
+    protected _name:string;
+    protected _position:Position;
+    constructor(_Pos:Position){
+        this._position=_Pos;
     }
     render(){
-        return this.name;
+        return this._name;
     }
     move(x: number, y: number) {
-        this.position.X+=x;
-        this.position.Y+=y;
+        this._position.X+=x;
+        this._position.Y+=y;
     }
     getName(){
-        return this.name;
+        return this._name;
+    }
+    get position():Position{
+        return this._position;
     }
 }

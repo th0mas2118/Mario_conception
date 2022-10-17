@@ -1,6 +1,6 @@
-import { IRenderable } from "../interfaces/IRenderable";
-import { IMovable } from "../interfaces/IMovable";
-import { Position } from "./Utils/Position";
+import { IRenderable } from "../../interfaces/IRenderable";
+import { IMovable } from "../../interfaces/IMovable";
+import { Position } from "../Utils/Position";
 
 export abstract class ACharacter implements IRenderable, IMovable{
     name:string;

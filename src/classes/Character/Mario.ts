@@ -1,4 +1,3 @@
-import {Position} from "./Utils/Position";
 import { ACharacter } from "./ACharacter";
 
 export class Mario extends ACharacter{

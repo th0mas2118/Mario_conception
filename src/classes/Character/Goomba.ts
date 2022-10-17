@@ -1,7 +1,7 @@
 import { Position } from "../Utils/Position";
 import { Monster } from "./Monster";
 
-class Goomba extends Monster{
+export class Goomba extends Monster{
     _live:boolean;
     constructor(_Pos:Position){
         super(_Pos)

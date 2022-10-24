@@ -25,6 +25,21 @@ export class World {
         this.grid.reset();
         this.worldElements.forEach(x => this.grid.addToPosition(x, x.position));
         this.characters.forEach(x => this.grid.addToPosition(x, x.position));
-        console.table(this.grid.grid);
+
+        let grid = this.grid.grid;
+        let finalString = "";
+
+        grid.forEach(row => {
+            row.forEach(column => {
+                if (!column) {
+                    finalString += "⬜️";
+                }
+                finalString += column;
+            })
+
+            finalString += "\n";
+        })
+
+        console.log(finalString);
     }
 }

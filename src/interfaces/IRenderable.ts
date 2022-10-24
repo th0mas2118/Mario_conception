@@ -1,3 +1,3 @@
-export interface IRenderable{
-    render():string;
+export interface IRenderable {
+    render(): string;
 }

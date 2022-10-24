@@ -1,5 +1,5 @@
-import { IInteractable } from "../../interfaces/IInteractable.js";
-import { WorldElement } from "./WorldElement.js";
+import { IInteractable } from "../../interfaces/IInteractable";
+import { WorldElement } from "./WorldElement";
 
 export class LuckyBlock extends WorldElement implements IInteractable {
     constructor(pos) {

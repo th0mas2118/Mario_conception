@@ -1,5 +1,5 @@
-import { IRenderable } from "../../interfaces/IRenderable.js";
-import { Position } from "../Utils/Position.js";
+import { IRenderable } from "../../interfaces/IRenderable";
+import { Position } from "../Utils/Position";
 
 export abstract class WorldElement implements IRenderable {
     name: string;

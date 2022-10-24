@@ -1,5 +1,5 @@
-import { Position } from "../Utils/Position.js";
-import { ACharacter } from "./ACharacter.js";
+import { Position } from "../Utils/Position";
+import { ACharacter } from "./ACharacter";
 
 export abstract class Monster extends ACharacter {
     constructor(_Pos: Position) {

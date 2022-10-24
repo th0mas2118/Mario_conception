@@ -1,6 +1,6 @@
-import { IRenderable } from "../../interfaces/IRenderable.js";
-import { IMovable } from "../../interfaces/IMovable.js";
-import { Position } from "../Utils/Position.js";
+import { IRenderable } from "../../interfaces/IRenderable";
+import { IMovable } from "../../interfaces/IMovable";
+import { Position } from "../Utils/Position";
 
 export abstract class ACharacter implements IRenderable, IMovable {
     protected _name: string;

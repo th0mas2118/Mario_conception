@@ -1,5 +1,5 @@
-import { Position } from "../Utils/Position.js";
-import { Monster } from "./Monster.js";
+import { Position } from "../Utils/Position";
+import { Monster } from "./Monster";
 
 export class Goomba extends Monster {
     _live: boolean;

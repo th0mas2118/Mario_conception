@@ -1,4 +1,4 @@
-import { WorldElement } from "./WorldElement.js";
+import { WorldElement } from "./WorldElement";
 
 export class Block extends WorldElement {
     constructor(pos) {

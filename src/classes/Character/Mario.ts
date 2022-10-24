@@ -11,7 +11,10 @@ export class Mario extends ACharacter {
         this._nb_piece = 0;
     }
     jump(): void {
-        console.log("jump");
+        this.move(0,1)
+        setTimeout(()=>{
+            this.move(0,-1)
+        },300)
     }
     addPiece(): void {
         this._nb_piece++;

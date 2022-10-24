@@ -30,3 +30,21 @@ world.worldElements.push(new LuckyBlock(new Position(9, 3)));
 world.render();
 
 export default main;
+
+window.addEventListener("DOMContentLoaded",e=>{
+    window.addEventListener("keyup",(e)=>{
+        if(e.key=="ArrowLeft"){
+            mario.move(-1,0)
+        }
+        if(e.key=="ArrowRight"){
+            mario.move(1,0)
+        }
+        if(e.key==" " || e.key=="Space"){
+            mario.jump()
+        }
+    })
+})
+
+export function view(){
+    world.render()
+}

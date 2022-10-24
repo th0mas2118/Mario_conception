@@ -40,6 +40,7 @@ export class World {
             finalString += "\n";
         })
 
+        console.clear()
         console.log(finalString);
     }
 }

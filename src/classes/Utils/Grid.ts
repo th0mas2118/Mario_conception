@@ -1,5 +1,5 @@
-import { IRenderable } from "../../interfaces/IRenderable";
-import { Position } from "./Position";
+import { IRenderable } from "../../interfaces/IRenderable.js";
+import { Position } from "./Position.js";
 
 export class Grid {
     protected _grid = [

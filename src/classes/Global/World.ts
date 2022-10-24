@@ -1,8 +1,8 @@
-import { ACharacter } from "../Character/ACharacter";
-import { Grid } from "../Utils/Grid";
-import { Position } from "../Utils/Position";
-import { Block } from "../WorldElements/Block";
-import { WorldElement } from "../WorldElements/WorldElement";
+import { ACharacter } from "../Character/ACharacter.js";
+import { Grid } from "../Utils/Grid.js";
+import { Position } from "../Utils/Position.js";
+import { Block } from "../WorldElements/Block.js";
+import { WorldElement } from "../WorldElements/WorldElement.js";
 
 export class World {
     worldElements: WorldElement[] = [];

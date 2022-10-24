@@ -1,24 +1,24 @@
-import { IRenderable } from "../../interfaces/IRenderable";
-import { IMovable } from "../../interfaces/IMovable";
-import { Position } from "../Utils/Position";
+import { IRenderable } from "../../interfaces/IRenderable.js";
+import { IMovable } from "../../interfaces/IMovable.js";
+import { Position } from "../Utils/Position.js";
 
-export abstract class ACharacter implements IRenderable, IMovable{
-    protected _name:string;
-    protected _position:Position;
-    constructor(_Pos:Position){
-        this._position=_Pos;
+export abstract class ACharacter implements IRenderable, IMovable {
+    protected _name: string;
+    protected _position: Position;
+    constructor(_Pos: Position) {
+        this._position = _Pos;
     }
-    render(){
+    render() {
         return this._name;
     }
     move(x: number, y: number) {
-        this._position.X+=x;
-        this._position.Y+=y;
+        this._position.X += x;
+        this._position.Y += y;
     }
-    getName(){
+    getName() {
         return this._name;
     }
-    get position():Position{
+    get position(): Position {
         return this._position;
     }
 }

@@ -1,10 +1,9 @@
-import { Goomba } from "./classes/Character/Goomba";
-import { Mario } from "./classes/Character/Mario";
-import { World } from "./classes/Global/World";
-import { Position } from "./classes/Utils/Position";
-import { Block } from "./classes/WorldElements/Block";
-import { BreakableBlock } from "./classes/WorldElements/BreakableBlock";
-import { LuckyBlock } from "./classes/WorldElements/LuckyBlock";
+import { Goomba } from "./classes/Character/Goomba.js";
+import { Mario } from "./classes/Character/Mario.js";
+import { World } from "./classes/Global/World.js";
+import { Position } from "./classes/Utils/Position.js";
+import { BreakableBlock } from "./classes/WorldElements/BreakableBlock.js";
+import { LuckyBlock } from "./classes/WorldElements/LuckyBlock.js";
 
 function main(): string {
     const hello: string = "Hello, World!";

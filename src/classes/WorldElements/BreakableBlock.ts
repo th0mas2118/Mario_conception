@@ -1,5 +1,5 @@
-import { IInteractable } from "../../interfaces/IInteractable";
-import { WorldElement } from "./WorldElement";
+import { IInteractable } from "../../interfaces/IInteractable.js";
+import { WorldElement } from "./WorldElement.js";
 
 export class BreakableBlock extends WorldElement implements IInteractable {
     constructor(pos) {

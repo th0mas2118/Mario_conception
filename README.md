@@ -5,9 +5,9 @@ Projet réalisé par Thomas Pierson et Anthony Dragun.
 Le projet est séparé en deux branches:
 
 - Console: Affichage direct dans la console, sans possibilité de mouvement.
-- Navigateur: Fonctionne uniquement dans un navigateur, permet les mouvements de base: gauche/droite/sauter.
+- Navigateur: Fonctionne uniquement dans un navigateur, permet les mouvements de base: gauche/droite/sauter (flèches directionnelles + espace).
 
-Nous avons crées deux branches car il y avait un problème avec l'option module du TSCONFIG.JSON. Lors du build, les imports JS n'étaient pas correctement fait (manque du .js), et du coup les scripts ne fonctionnait pas sur navigateur. Ce problème pourrait également être résolu à l'aide de Webpack.
+Nous avons créé deux branches car il y avait un problème lors du build, les imports JS n'étaient pas correctement fait (manque du ".js"), et du coup les scripts ne fonctionnait pas sur navigateur. On a "réglé" ce problème en utilisant différents types de module dans le TSCONFIG. Ce problème pourrait également être résolu à l'aide de Webpack.
 
 ## Spécifications techniques
 

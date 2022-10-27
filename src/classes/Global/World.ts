@@ -2,6 +2,8 @@ import { ACharacter } from "../Character/ACharacter";
 import { Grid } from "../Utils/Grid";
 import { Position } from "../Utils/Position";
 import { Block } from "../WorldElements/Block";
+import { BreakableBlock } from "../WorldElements/BreakableBlock";
+import { LuckyBlock } from "../WorldElements/LuckyBlock";
 import { WorldElement } from "../WorldElements/WorldElement";
 
 export class World {
@@ -11,6 +13,7 @@ export class World {
 
     constructor() {
         this.addGround();
+        this.addBlocks();
     }
 
     private addGround() {
@@ -19,6 +22,14 @@ export class World {
                 this.worldElements.push(new Block(new Position(x, 7 + y)));
             }
         }
+    }
+
+    private addBlocks() {
+        this.worldElements.push(new LuckyBlock(new Position(4, 3)));
+        this.worldElements.push(new BreakableBlock(new Position(6, 3)));
+        this.worldElements.push(new LuckyBlock(new Position(7, 3)));
+        this.worldElements.push(new BreakableBlock(new Position(8, 3)));
+        this.worldElements.push(new LuckyBlock(new Position(9, 3)));
     }
 
     render(): void {

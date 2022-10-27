@@ -1,16 +1,8 @@
-import { Goomba } from "./classes/Character/Goomba";
-import { Mario } from "./classes/Character/Mario";
-import { World } from "./classes/Global/World";
-import { Position } from "./classes/Utils/Position";
-import { Block } from "./classes/WorldElements/Block";
-import { BreakableBlock } from "./classes/WorldElements/BreakableBlock";
-import { LuckyBlock } from "./classes/WorldElements/LuckyBlock";
+import { Game } from "./classes/Global/Game";
 
-function main(): string {
-    const hello: string = "Hello, World!";
-    return hello;
-}
+let game = new Game();
 
+<<<<<<< HEAD
 const result: any = main();
 //console.log(result);
 
@@ -49,3 +41,6 @@ export default main;
 export function view(){
     world.render()
 }
+=======
+game.start();
+>>>>>>> main
